@@ -173,3 +173,23 @@ html .sec-hero .hero-cta .btn-glass.btn-book,html .sec-hero .hero-cta .btn-glass
   .vl-contacts .map-actions .btn{padding:10px 8px;font-size:14px;min-height:0}
   .vl-more{font-size:12.5px}
 }
+/* яркий фон: фирменные синий и золотой насыщеннее и контрастнее (Сергей 12.11) */
+.nk-sec .sec-bg{background:radial-gradient(circle at 88% 10%,rgba(255,196,84,.8),rgba(255,196,84,0) 36%),radial-gradient(circle at 6% 94%,rgba(0,214,255,.6),rgba(0,214,255,0) 42%),linear-gradient(150deg,#3cb9f6 0%,#1592d8 46%,#0a5c9e 100%)}
+html[data-theme="dark"] .nk-sec .sec-bg{background:radial-gradient(circle at 88% 10%,rgba(239,176,82,.4),rgba(239,176,82,0) 38%),linear-gradient(150deg,#0c4c7c 0%,#08365c 55%,#06203a 100%)}
+.vl-road,.vl-scheme{opacity:.95}
+.vlr-band{fill:rgba(6,40,72,.3)}
+.vlr-edge,.vlr-dash{stroke:rgba(255,255,255,.92)}
+.vlr-body{fill:#ffc454}.vlr-body2{fill:#fff}.vlr-body3{fill:#0b3a5e}
+.vls-sea{fill:rgba(255,255,255,.18)}
+.vls-river{stroke:rgba(255,255,255,.4)}
+.vls-wave{stroke:rgba(255,255,255,.85)}
+.vls-route{stroke:rgba(255,255,255,.8)}
+.vls-pt{fill:#ffc454;stroke:#0a5c9e}
+.vls-hub{fill:#fff;stroke:#0a5c9e}
+.vls-ring{stroke:#fff}
+.vls-dot{fill:#ffe08a}
+.vls-lbl{fill:rgba(255,255,255,.95);font-weight:700}
+html[data-theme="dark"] .vls-lbl{fill:rgba(255,255,255,.8)}
+/* версия для слабовидящих: без живых фонов и анимаций */
+html[data-hc="1"] .a4bg{display:none!important}
+html[data-hc="1"] *{animation:none!important;transition:none!important}
