@@ -193,3 +193,8 @@ html[data-theme="dark"] .vls-lbl{fill:rgba(255,255,255,.8)}
 /* версия для слабовидящих: без живых фонов и анимаций */
 html[data-hc="1"] .a4bg{display:none!important}
 html[data-hc="1"] *{animation:none!important;transition:none!important}
+/* текст не выходит за плашки (Сергей 13.11): строка программы переносит цену вниз, а не распирает карточку */
+@media (max-width:767px){.vl-progs,.vl-contacts{grid-template-columns:minmax(0,1fr)}}
+.vl-pl li{display:flex;flex-wrap:wrap;align-items:center;column-gap:10px;row-gap:2px}
+.vl-pl li>span:not(.vl-cat){flex:1 1 7em;min-width:0;overflow-wrap:break-word}
+.vl-pl li b{margin-left:auto}
